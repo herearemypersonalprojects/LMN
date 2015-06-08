@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.lmnSearchesLinks" code="lmnSearchesLinks"
+                     controllerClass="com.travelsoft.lastminute.catalog.util.LastMinuteSearchesLinksPageController"
+                     templateRef="lmnSearch/searchesLinksPage.ftl">
+
+    <modelRef code="page.lmnSearchesLinks" version="1" />
+
+</pageLayoutComponent>

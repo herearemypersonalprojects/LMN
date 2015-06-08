@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*!
+ * [form stylesheet]
+ *
+ * @project   Lastminute
+ * @use       style for custom form components
+ */
+
+  .outtaHere { position:absolute; left:-3000px; }
+  /*Radio buttons*/
+  .radioArea { cursor:pointer; }
+  .radioArea, .radioAreaChecked { float:left; width:11px !important; height:11px; background: url(../css_imgs/btn_radio.png) no-repeat; overflow: hidden; margin:1px 0 0; }
+  .radioAreaChecked {background-position: 0 -29px;}
+  /*Checkboxes*/
+  .checkboxArea, .checkboxAreaChecked { z-index:1; position:absolute; top:125px; right:-4px; float:left; width:14px; height:14px; margin:0; padding:0; overflow:hidden; background: url(../css_imgs/btn_checkbox.gif) no-repeat; }
+  .checkboxAreaChecked {background-position: 0 -23px;}
+  .all-offers .checkboxAreaChecked {background-position: 0 -23px;}
+  #sidebar .checkboxArea,
+  #sidebar .checkboxAreaChecked{ position:relative; top:0; right:0; }

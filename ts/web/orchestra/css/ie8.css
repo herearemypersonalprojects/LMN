@@ -1,0 +1,42 @@
+/************************************************
+*   Header
+*************************************************/
+#headerBarZone { filter:none; }
+
+/************************************************
+*   Loader
+*************************************************/
+#headerBarZone #starterZone.loading .starter .pto_starter {
+  background-image : url(../img/common/loader_starter.gif) !important;
+  background-position: center;
+  background-repeat : no-repeat;
+}
+#headerBarZone #starterZone.loading .starter .pto_starter:after { top: -9999px; }
+
+/************************************************
+*   eltstyle
+*************************************************/
+.btn:active { }
+
+/************************************************
+*   STYLE
+*************************************************/
+.selectCustom .slt_optionSelected:after { background: url(../css_imgs/ie8ie7/dropdown_arrow.png) no-repeat center; }
+#headerBarZone span#btn_fullscreen { display: none; }
+
+/************************************************
+*   THEME
+*************************************************/
+.table th { color:#fff; background: #414141; }
+
+/************************************************
+*   HEADER PAGE
+*************************************************/
+#headerPage { background:#F4F4F4; background-image:none; filter:none; }
+#headerBarZone #quickSearchZone .defSearchBar label { display: inline; }
+
+/************************************************
+*   HOME PAGE
+*************************************************/
+.cpt_prdtBigPush .cpt_inner .prdtBigPushBlock .caption,
+.cpt_thumnailPush .priceZone { background: #000; }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent  xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                      code="itemList" id="item_1"
+                      displayerType="content"
+                      controllerClass="com.travelsoft.lastminute.catalog.searchengine.SearchBoxEngine"
+                      templateRef="chain.ftl">
+  <modelRef code="searchBox" version="1"/>
+  <config>
+    <item>
+      <contextObject label="searchBoxFormParameters" code="c.de;dpci;dd;dmy;aj;minMan"/>
+    </item>
+  </config>
+  <container modelCode="searchBoxContainer">
+    <component xsi:type="ContentLayoutComponent" id="searchBox.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="searchEngine/searchBox.ftl">
+      <modelRef code="main.searchBox" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

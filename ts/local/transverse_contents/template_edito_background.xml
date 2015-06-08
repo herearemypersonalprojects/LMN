@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document language="fr" type="edito" kind="template" channel="TDLASTMINUTE" contentOrigin="intern" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xyDocument.xsd">
+  <mainZone code="backgroundPicture" label="Image de fond" type="mediaUrl" baseDocZoneRef="backgroundPicture" modified="true">
+    <value>shared-cs/css_imgs/bg_body.jpg</value>
+  </mainZone>
+  <mainZone code="backgroundPictureUrl" label="Lien dans l'image de fond" type="text" baseDocZoneRef="backgroundPictureUrl" modified="true">
+    <value/>
+  </mainZone>
+  <mainZone code="productActive" label="Paramètre d'activation dans la page produit (Utiliser true or false)" type="text" baseDocZoneRef="productActive" modified="true">
+    <value>false</value>
+  </mainZone>
+  <mainZone code="resultsActive" label="Paramètre d'activation dans la page des résultats (Utiliser true or false)" type="text" baseDocZoneRef="resultsActive" modified="true">
+    <value>false</value>
+  </mainZone>
+</Document>

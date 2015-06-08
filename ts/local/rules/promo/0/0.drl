@@ -1,0 +1,46 @@
+package Some_business_rules;
+
+//generated from freemarker
+import java.util.Date;
+import com.travelsoft.cameleo.catalog.data.Product;
+import com.travelsoft.cameleo.catalog.data.RuleObject;
+import com.travelsoft.cameleo.catalog.data.RuleContext;
+import com.travelsoft.cameleo.catalog.data.RuleAvail;
+import com.travelsoft.cameleo.catalog.data.RuleAvailProvider;
+import com.travelsoft.cameleo.catalog.data.RuleAgency;
+import com.travelsoft.rulesManager.RulesUtil;
+import java.util.Calendar;
+
+global java.lang.String stackable;
+global org.apache.log4j.Logger logger;
+
+
+//Rule label: vacances_juillet
+rule "0"
+  when
+    RuleObject( $ruleAvail : avail, $ruleContext : context, $product : product)
+    RuleContext( $ruleAgency : ruleAgency
+      , reservationDate >= "17-avr.-2013"
+      , reservationDate <= "30-avr.-2013"
+    ) from $ruleContext
+    RuleAvailProvider( $departureDate : departureDate
+      //Check if the departure date is in the desired interval
+      , departureDate >= "01-juil.-2013"
+      , departureDate <= "31-juil.-2013"
+      //Check the number of days and number of nights
+      
+      
+      
+      
+      //Check the departure city
+          , departureCity == "PAR"
+      //Check the pax
+          , paxType == "ADULT"
+      //Check the room types
+      //Check the room categories
+    ) from $ruleAvail
+    
+    
+  then
+    RulesUtil.computeNewPrice($ruleAvail, "100", "EURO", stackable);
+end

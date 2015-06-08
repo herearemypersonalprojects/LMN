@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document language="fr" type="product" subType="extern" kind="template" channel="TDLASTMINUTE" contentOrigin="extern" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xyl://TDLASTMINUTE/xyDocument.xsd">
+  <mainZone code="title" label="Titre" type="text" baseDocZoneRef="title" modified="false">
+    <value>Titre du produit</value>
+  </mainZone>
+  <mainZone code="mainPicture" label="Image principale" type="mediaUrl" baseDocZoneRef="mainPicture" modified="false">
+    <value>CS/images/blankimg.gif</value>
+  </mainZone>
+  <mainZone code="resume" label="Résumé" type="wysiwyg" baseDocZoneRef="resume" modified="false">
+    <value>Résumé du produit</value>
+  </mainZone>
+  <mainZone code="diaporama" label="Diaporama" type="list" baseDocZoneRef="diaporama" modified="false">
+    <zones>
+      <zone code="image" type="mediaUrl">
+        <value>CS/images/blankimg.gif</value>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="richMedias" label="Medias riches" type="list" baseDocZoneRef="richMedias" modified="false">
+    <zones>
+      <zone code="richMedia" type="model">
+        <zones>
+          <zone code="richMediaLabel" label="Label du media riche" type="text">
+            <value/>
+          </zone>
+          <zone code="richMediaUrl" label="Url du media riche" type="text">
+            <value/>
+          </zone>
+          <zone code="richMediaType" label="Type du media riche" type="text">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="descriptive" label="Description" type="list" baseDocZoneRef="descriptive" modified="false">
+    <zones>
+      <zone code="para" type="model">
+        <zones>
+          <zone code="paraTitle" label="Titre du paragraphe" type="text">
+            <value/>
+          </zone>
+          <zone code="paraContent" label="Contenu du paragraphe" type="wysiwyg">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="flight" label="Informations transports" type="list" baseDocZoneRef="flight" modified="false">
+    <zones>
+      <zone code="flightPara" type="model">
+        <zones>
+          <zone code="flightParaTitle" label="Titre du paragraphe" type="text">
+            <value/>
+          </zone>
+          <zone code="flightParaContent" label="Texte du paragraphe" type="wysiwyg">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="include" label="Comprend/Comprend pas" type="list" baseDocZoneRef="include" modified="false">
+    <zones>
+      <zone code="incPara" type="model">
+        <zones>
+          <zone code="incParaTitle" label="Titre du paragraphe" type="text">
+            <value/>
+          </zone>
+          <zone code="incParaContent" label="Contenu du paragraphe" type="wysiwyg">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="expertOpinion" label="Avis d'expert" type="list" baseDocZoneRef="expert" modified="true">
+    <zones>
+      <zone code="expertPara" type="model">
+        <zones>
+          <zone code="expertParaTitle" label="Titre du paragraphe" type="text">
+            <value/>
+          </zone>
+          <zone code="expertParaContent" label="Contenu du paragraphe" type="wysiwyg">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="information" label="A savoir" type="list" baseDocZoneRef="information" modified="true">
+    <zones>
+      <zone code="infoPara" type="model">
+        <zones>
+          <zone code="infoParaTitle" label="Titre du paragraphe" type="text">
+            <value/>
+          </zone>
+          <zone code="infoParaContent" label="Contenu du paragraphe" type="wysiwyg">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="miniDescriptive" label="Mini Description" type="list" baseDocZoneRef="miniDescriptive" modified="true">
+    <zones>
+      <zone code="para" type="model">
+        <zones>
+          <zone code="miniContent" label="Mini contenu" type="text">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+  <mainZone code="miniDescriptiveButtom" label="Mini descriptive" type="text" baseDocZoneRef="miniDescriptiveButtom" modified="true">
+    <value/>
+  </mainZone>
+</Document>

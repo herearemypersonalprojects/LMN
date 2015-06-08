@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../../../TRUNK_cameleo.catalog.data/src/main/resources/layouts.xsd"
+  code="home" id="page.home.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.product.ProductMainController"
+  templateRef="chain.ftl">
+  <modelRef code="page.productAjax" version="1"/>
+  <config>
+    <item modelCodeRef="services.product.searchCriteriaById">
+      <publishedProductSearchCriteria ttcMode="true"
+        firstResultIndex="0" lastResultIndex="1"
+        resultWithFormulae="true" resultWithDocuments="true"
+        resultWithAvails="true" resultWithTContents="true"/>
+    </item>
+  </config>
+
+  <container modelCode="productResumeContainer">
+     <component xsi:type="ContentLayoutComponent" id="product.resume.1_1"
+       controllerClass="com.travelsoft.lastminute.catalog.product.FillProductResume"
+       templateRef="product/productResume.ftl">
+       <modelRef code="product.resume" version="1"/>
+     </component>
+   </container>
+
+   <container modelCode="productDiapoContainer">
+     <component xsi:type="ContentLayoutComponent" id="product.diapo.1_1"
+       controllerClass="com.travelsoft.lastminute.catalog.product.FillProductDiapo"
+       templateRef="product/productDiapo.ftl">
+       <modelRef code="product.diapo" version="1"/>
+       <container modelCode="videoLinkContainer">
+                   <component xsi:type="ContentLayoutComponent"
+                     id="main.withResults.video.1_1"
+                     controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem"
+                      templateRef="product/productVideoLink.ftl">
+                      <modelRef code="main.withResults.video" version="1" />
+                   </component>
+                 </container>
+     </component>
+   </container>
+
+  <container modelCode="resaformContainer">
+    <component xsi:type="ContentLayoutComponent" id="calendarResaAjax.resaform.1_1"
+    controllerClass="com.travelsoft.lastminute.catalog.product.FillProductResaform"
+    templateRef="product/calendarResa.ftl">
+      <modelRef code="calendarResaAjax.resaform" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

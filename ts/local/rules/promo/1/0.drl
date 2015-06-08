@@ -1,0 +1,45 @@
+package Some_business_rules;
+
+//generated from freemarker
+import java.util.Date;
+import com.travelsoft.cameleo.catalog.data.Product;
+import com.travelsoft.cameleo.catalog.data.RuleObject;
+import com.travelsoft.cameleo.catalog.data.RuleContext;
+import com.travelsoft.cameleo.catalog.data.RuleAvail;
+import com.travelsoft.cameleo.catalog.data.RuleAvailProvider;
+import com.travelsoft.cameleo.catalog.data.RuleAgency;
+import com.travelsoft.rulesManager.RulesUtil;
+import java.util.Calendar;
+
+global java.lang.String stackable;
+global org.apache.log4j.Logger logger;
+
+
+//Rule label: noel
+rule "0"
+  when
+    RuleObject( $ruleAvail : avail, $ruleContext : context, $product : product)
+    RuleContext( $ruleAgency : ruleAgency
+      
+      
+    ) from $ruleContext
+    RuleAvailProvider( $departureDate : departureDate
+      //Check if the departure date is in the desired interval
+      , departureDate >= "22-déc.-2013"
+      , departureDate <= "22-déc.-2013"
+      //Check the number of days and number of nights
+      
+      
+      
+      
+      //Check the departure city
+          , departureCity == "PAR"
+      //Check the pax
+      //Check the room types
+      //Check the room categories
+    ) from $ruleAvail
+    
+    
+  then
+    RulesUtil.computeNewPrice($ruleAvail, "5", "POURCENTAGE", stackable);
+end

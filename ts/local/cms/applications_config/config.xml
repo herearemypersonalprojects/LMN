@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layoutApplicationsConfiguration xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ./layouts.xsd">
+  <previewConfiguration>
+    <entity>
+      <category>
+        <application code="tourcameleo.default.application">
+          <site id="tourcameleo.default.site" code="tourcameleo.default.site" label="Site par défaut">
+            <page code="tourcameleo.default.displayer" label="Prévisualisation générique">
+              <model captureCode="defaultCapture" id="tourcameleo.default.model" label="Modèle par défaut" defaultModel="true">
+                <injectionConfiguration componentId="tourcameleo.default.displayer" />
+              </model>
+            </page>
+          </site>
+        </application>
+      </category>
+    </entity>
+  </previewConfiguration>
+  <linkConfiguration>
+    <entity>
+      <category>
+        <application code="tourcameleo.default.application">
+          <site id="tourcameleo.default.site" code="tourcameleo.default.site" label="Site par défaut">
+            <page code="tourcameleo.default.displayer" label="Prévisualisation générique" />
+          </site>
+        </application>
+      </category>
+    </entity>
+  </linkConfiguration>
+  <wysiwygFullConfiguration>
+    <entity>
+      <category>
+        <mainZone>
+          <application code="tourcameleo.default.application">
+            <site id="tourcameleo.default.site" code="tourcameleo.default.site" label="Site par défaut">
+              <page code="tourcameleo.default.wysiwygFull" label="Prévisualisation générique">
+                <model captureCode="defaultCapture" id="tourcameleo.default.model" label="Modèle par défaut" defaultModel="true">
+                  <injectionConfiguration componentId="tourcameleo.default.displayer" />
+                </model>
+              </page>
+            </site>
+          </application>
+        </mainZone>
+      </category>
+    </entity>
+  </wysiwygFullConfiguration>
+</layoutApplicationsConfiguration>

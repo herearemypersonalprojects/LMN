@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document language="fr" type="edito" kind="template" channel="TDLASTMINUTE" contentOrigin="intern" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xyDocument.xsd">
+  <mainZone code="title" label="title" type="text" baseDocZoneRef="title" modified="false">
+    <value>Titre</value>
+  </mainZone>
+  <mainZone code="mainPicture" label="Image principale" type="mediaUrl" baseDocZoneRef="mainPicture" modified="false">
+    <value>CS/images/blankimg.gif</value>
+  </mainZone>
+  <mainZone code="resume" label="Résumé" type="wysiwyg" baseDocZoneRef="resume" modified="false">
+    <value>Résumé</value>
+  </mainZone>
+  <mainZone code="flag" label="Nouvelle fenêtre (OUI: ouvre dans une onglet)" type="text" baseDocZoneRef="flag" modified="false">
+    <value>Non</value>
+  </mainZone>
+  <mainZone code="url" label="Destination Url" type="text" baseDocZoneRef="url" modified="false">
+    <value/>
+  </mainZone>
+  <mainZone code="backgroundPicture" label="Image fond" type="mediaUrl" baseDocZoneRef="backgroundPicture" modified="false">
+    <value>/shared-cs/css_imgs/bg_body.jpg</value>
+  </mainZone>
+  <mainZone code="backgroundPictureUrl" label="BackgroundPicture Url" type="text" baseDocZoneRef="backgroundPictureUrl" modified="false">
+    <value/>
+  </mainZone>
+</Document>

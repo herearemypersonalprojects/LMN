@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd " code="itemList" id="item_1" displayerType="content" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="demo.ftl">
+  <modelRef code="calendarResaAjax" version="1"/>
+</pageLayoutComponent>

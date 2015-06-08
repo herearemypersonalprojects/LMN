@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document language="fr" type="edito" kind="template" channel="TDLASTMINUTE" contentOrigin="intern" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xyDocument.xsd">
+ <mainZone code="seo" label="Seo" type="list" baseDocZoneRef="seo" modified="true">
+    <zones>
+      <zone code="seoInfoPara" type="model">
+        <zones>
+          <zone code="paraTitle" label="Titre de la destination" type="text">
+            <value/>
+          </zone>
+          <zone code="paraContent" label="Lien de la destination" type="text">
+            <value/>
+          </zone>
+        </zones>
+      </zone>
+    </zones>
+  </mainZone>
+</Document>

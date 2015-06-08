@@ -1,0 +1,23 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *      A DUPLIQUER POUR LE WYSIWYG
+ *!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+body { font-family: Arial, Helvetica, sans-serif; line-height: 1.4; font-size: 12px; color:#434343; }
+#wrapper { background: #ECE9D4; overflow: hidden; }
+table#tbe_wrap { background: #fff; margin: 20px 30px; border: none; }
+/* HEADER */
+table#tbe_wrap #td_header { border: none; }
+/* BODY ZONE */
+table#tbe_wrap #td_body { padding:0 20px; border: none; }
+/* FOOTER */
+table#tbe_wrap #td_footer { background: #7DA500; color: #fff; font-size:12px; text-align: center; border: none; }
+table#tbe_wrap #td_footer a { color: #fff; }
+
+/************************************************
+*   INIT PROPERTIES
+*************************************************/
+p, ul, ol, table { margin: 0 0 15px 0; }
+a { color: #517900; }
+ul, ol { padding: 0 0 0 35px; }
+table { border: 1px solid #999; border-collapse: collapse; }
+table td { border: 1px solid #999; padding: 5px; }

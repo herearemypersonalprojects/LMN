@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+  code="home" id="page.home.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.error.ErrorMainController"
+  templateRef="layout/mainLayout.ftl">
+  <modelRef code="page.home" version="1"/>
+  <container modelCode="headContainer">
+    <component xsi:type="ContentLayoutComponent" id="head.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="head/head.ftl">
+      <modelRef code="head" version="1"/>
+      <container modelCode="tagManJsContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.tagMan.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="tracking/tagManJs.ftl">
+          <modelRef code="head.tagman" version="1"/>
+        </component>
+      </container>
+      <container modelCode="metaContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.meta.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="head/meta.ftl">
+          <modelRef code="head.meta" version="1"/>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="tagManTopBody">
+    <component xsi:type="ContentLayoutComponent" id="tagManTopBody.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/tagManTopBody.ftl">
+      <modelRef code="tagManTopBody" version="1"/>
+    </component>
+  </container>
+  <container modelCode="headerContainer">
+    <component xsi:type="ContentLayoutComponent" id="header.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="header/header.ftl">
+      <modelRef code="header" version="1"/>
+    </component>
+  </container>
+  <container modelCode="navigationContainer">
+    <component xsi:type="ContentLayoutComponent" id="navigation.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="navigation/navigation.ftl">
+      <modelRef code="navigation" version="1" />
+      <container modelCode="breadcrumbsContainer">
+        <component xsi:type="ContentLayoutComponent" id="navigation.breadcrumbs.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="navigation/breadcrumbs.ftl">
+          <modelRef code="navigation.breadcrumbs" version="1" />
+        </component>
+      </container>
+      <container modelCode="statusbarContainer">
+        <component xsi:type="ContentLayoutComponent" id="navigation.statusbar.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="navigation/statusbar.ftl">
+          <modelRef code="navigation.statusbar" version="1" />
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="mainContainer">
+    <component xsi:type="ContentLayoutComponent" id="main.1_1"
+            controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+            templateRef="error/error404.ftl">
+      <modelRef code="main" version="1"/>
+    </component>
+  </container>
+  <container modelCode="footerContainer">
+    <component xsi:type="ContentLayoutComponent" id="footer.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="footer/footer.ftl">
+      <modelRef code="footer" version="1"/>
+    </component>
+  </container>
+  <container modelCode="javascriptContainer">
+    <component xsi:type="ContentLayoutComponent" id="javascript.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="javascript/js.ftl">
+      <modelRef code="javascript" version="1"/>
+    </component>
+  </container>
+  <container modelCode="trackingContainer">
+    <component xsi:type="ContentLayoutComponent" id="tracking.1_1"
+      controllerClass="com.travelsoft.lastminute.catalog.tracking.ErrorOmnitureStatsBuilder"
+      templateRef="tracking/tracking.ftl">
+      <modelRef code="tracking" version="1"/>
+    </component>
+  </container>
+  <container modelCode="tagManBottomBody">
+    <component xsi:type="ContentLayoutComponent" id="tagManBottomBody.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/tagManBottomBody.ftl">
+      <modelRef code="tagManBottomBody" version="1"/>
+    </component>
+  </container>
+  <container modelCode="googleAnalyticsContainer">
+    <component xsi:type="ContentLayoutComponent" id="googleAnalyticsContainer.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/googleAnalytics.ftl">
+      <modelRef code="googleAnalyticsContainer" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

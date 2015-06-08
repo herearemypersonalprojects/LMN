@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.lmnSearch" code="lmnSearch"
+                     controllerClass="com.travelsoft.lastminute.catalog.serp.LastMinuteSearchPageController"
+                     templateRef="lmnSearch/page.ftl">
+
+    <modelRef code="page.lmnSearch" version="1" />
+
+      <config>
+        <item modelCodeRef="services.product.defaultSearchCriteria">
+            <publishedProductSearchCriteria	ttcMode="true"
+                                            responseFormat="UserDefined"
+                                            firstResultIndex="0"
+                                            lastResultIndex="40">
+                <customCriteria code="EXLAS">
+                    <value code="!OUI" />
+                </customCriteria>
+            </publishedProductSearchCriteria>
+        </item>
+        <item>
+            <contextObject label="departuresWithin" code="14" />
+        </item>
+    </config>
+
+    <container modelCode="resultItemContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="resultItem.1_1" templateRef="lmnSearch/resultItem.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="resultItem" version="1" />
+        </component>
+    </container>
+</pageLayoutComponent>

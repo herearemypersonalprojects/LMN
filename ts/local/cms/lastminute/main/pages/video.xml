@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd " code="itemList" id="item_1" displayerType="content" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+  templateRef="chain.ftl">
+  <modelRef code="video" version="1"/>
+  <container modelCode="videoContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="video.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="product/video.ftl">
+      <modelRef code="videoItem" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

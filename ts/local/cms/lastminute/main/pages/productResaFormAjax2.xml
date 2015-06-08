@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd " code="itemList" id="item_1" displayerType="content" controllerClass="com.travelsoft.lastminute.catalog.product.ProductMainController" templateRef="chain.ftl">
+  <modelRef code="calendarResaAjax" version="1"/>
+  <config>
+    <item modelCodeRef="services.product.searchCriteriaById">
+      <publishedProductSearchCriteria ttcMode="true" firstResultIndex="0" lastResultIndex="1" resultWithFormulae="true" resultWithDocuments="true" resultWithAvails="true" resultWithTContents="true"/>
+    </item>
+  </config>
+  <container modelCode="productResumeContainer">
+    <component xsi:type="ContentLayoutComponent" id="product.resume.1_1" controllerClass="com.travelsoft.lastminute.catalog.product.FillProductResume" templateRef="product/productResume.ftl">
+      <modelRef code="product.resume" version="1"/>
+    </component>
+  </container>
+  <container modelCode="resaformContainer">
+    <component xsi:type="ContentLayoutComponent" id="calendarResaAjax.resaform.1_1" controllerClass="com.travelsoft.lastminute.catalog.product.FillProductResaform" templateRef="product/calendarResa.ftl">
+      <modelRef code="calendarResaAjax.resaform" version="1"/>
+    </component>
+  </container>
+  <container modelCode="javascriptContainer">
+    <component xsi:type="ContentLayoutComponent" id="javascript.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="javascript/js.ftl">
+      <modelRef code="javascript" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

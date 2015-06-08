@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+  code="productEmail" id="page.productMail.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.product.SendProductEmailController"
+  templateRef="layout/sendEmailPopupLayout.ftl">
+  <modelRef code="sendProductEmail" version="1"/>
+  <container modelCode="headContainer">
+    <component xsi:type="ContentLayoutComponent" id="head.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="head/head.ftl">
+      <modelRef code="head" version="1"/>
+      <container modelCode="tagManJsContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.tagMan.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="tracking/tagManJs.ftl">
+          <modelRef code="head.tagman" version="1"/>
+        </component>
+      </container>
+      <container modelCode="metaContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.meta.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="head/meta.ftl">
+          <modelRef code="head.meta" version="1"/>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="emailContainer">
+    <component xsi:type="ContentLayoutComponent" id="sendProductEmail.popup.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="product/sendProductEmailPopup.ftl">
+      <modelRef code="sendProductEmail.popup" version="1"/>
+    </component>
+  </container>
+  <container modelCode="javascriptContainer">
+    <component xsi:type="ContentLayoutComponent" id="javascript.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="javascript/js.ftl">
+      <modelRef code="javascript" version="1"/>
+    </component>
+  </container>
+  <container modelCode="trackingContainer">
+    <component xsi:type="ContentLayoutComponent" id="tracking.1_1"
+      controllerClass="com.travelsoft.lastminute.catalog.tracking.SendProductEmailOmnitureStatsBuilder"
+      templateRef="tracking/tracking.ftl">
+      <modelRef code="tracking" version="1"/>
+    </component>
+  </container>
+  <container modelCode="googleAnalyticsContainer">
+  <component xsi:type="ContentLayoutComponent" id="googleAnalyticsContainer.1_1"
+    controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+    templateRef="tracking/googleAnalytics.ftl">
+      <modelRef code="googleAnalyticsContainer" version="1"/>
+  </component>
+  </container>
+</pageLayoutComponent>

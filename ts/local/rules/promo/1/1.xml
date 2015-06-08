@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PromoOperation xmlns="http://www.travelsoft.fr" code="1" label="noel_pourcentage" stackable="false"><impactedProducts>57321</impactedProducts><rules id="0" label="noel" type="PROVIDER"><departureDateFrom>2013-12-22T00:00:00.000+01:00</departureDateFrom><departureDateTo>2013-12-22T00:00:00.000+01:00</departureDateTo><departureCities>PAR</departureCities><promoType>POURCENTAGE</promoType><promoValue>5</promoValue></rules></PromoOperation>

@@ -1,0 +1,49 @@
+package Some_business_rules;
+
+import java.math.BigDecimal;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import com.travelsoft.cameleo.catalog.data.ClientFile;
+import com.travelsoft.cameleo.catalog.data.DiscountVoucher;
+import com.travelsoft.cameleo.catalog.data.PersonLink;
+import com.travelsoft.cameleo.catalog.data.types.DiscountVoucherOriginDef;
+import com.travelsoft.cameleo.catalog.data.types.ClientFileProcessTypeDef;
+import com.travelsoft.rulesManager.util.SponsorshipUtil;
+
+  rule "sponsorship"
+    when
+    	ClientFile ( $clientFileId : id, $personId : personId != null )
+      	eval(SponsorshipUtil.getSponsorshipParentLink($personId) != null)
+    then
+    	// define discount voucher
+	  	DiscountVoucher dv = new DiscountVoucher();
+	  	dv.setLabel("Bon parrainage");
+	  	dv.setOrigin(DiscountVoucherOriginDef.SPONSORSHIP.toString());
+	  	dv.setProcess(ClientFileProcessTypeDef.PACKAGE.toString());
+
+	  	// amount
+	  	BigDecimal bdAmount = new BigDecimal(10);
+	  	dv.setInitialAmount(bdAmount);
+	  	dv.setAmount(bdAmount);
+	  	dv.setSlice(bdAmount);
+
+	  	// end validity date
+	  	Calendar calendarEndDate = new GregorianCalendar();
+        calendarEndDate.setTime(new Date());
+        calendarEndDate.add(Calendar.YEAR, 1);
+        dv.setValidityEndDate(calendarEndDate.getTime());
+
+	  	// No min clientFile
+	  	dv.setMinClientFileAmount(new BigDecimal(0));
+	  	// cumultive
+	  	dv.setCumultive(true);
+
+	  	// code unique
+	  	String code = "NB5-" + $personId + "-" + $clientFileId;
+	  	dv.setCode(code);
+
+	  	// create discount voucher
+	  	PersonLink personLink = SponsorshipUtil.getSponsorshipParentLink($personId);
+	  	SponsorshipUtil.createDiscountVoucher(dv, personLink.getParentPerson(), personLink.getChildPerson());
+  end

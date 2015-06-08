@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.index.1_1" code="index"
+                     controllerClass="com.travelsoft.lastminute.mobile.catalog.pages.HomePageController"
+                     templateRef="common/mainLayout.ftl">
+
+    <modelRef code="page.index" version="1" />
+
+    <config>
+      <item modelCodeRef="searchEngineCriteria">
+        <publishedProductSearchCriteria>
+          <searchEngineField>dpci</searchEngineField>
+          <searchEngineField>cc.de</searchEngineField>
+        </publishedProductSearchCriteria>
+      </item>
+    </config>
+
+    <container modelCode="headContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="head.1_1" templateRef="common/head.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="head" version="1" />
+        </component>
+    </container>
+
+    <container modelCode="headerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="header.1_1" templateRef="index/indexHeader.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="header" version="1" />
+
+            <container modelCode="lmnSearchLauncherContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="lmnSearchLauncher_1" templateRef="index/lmnSearchLauncher.ftl"
+                           controllerClass="com.travelsoft.lastminute.mobile.catalog.controller.transcontent.LmnSearchLaunchersController">
+                    <modelRef code="imageTopIndexPage" version="1" />
+                    <config>
+                        <item modelCodeRef="criteria">
+                             <textValue>cat=lmnM-LMLaunchers</textValue>
+                        </item>
+                    </config>
+                </component>
+            </container>
+        </component>
+    </container>
+
+    <container modelCode="bodyContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="body.1_1" templateRef="index/indexBody.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="body" version="1" />
+
+            <container modelCode="searchFormContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="searchForm.1_1" templateRef="common/searchForm.ftl"
+                           controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                    <modelRef code="searchForm" version="1" />
+                </component>
+            </container>
+
+            <container modelCode="lmnSearchLauncherContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="lmnSearchLauncher_2" templateRef="index/pushingLauncher.ftl"
+                           controllerClass="com.travelsoft.lastminute.mobile.catalog.controller.transcontent.PushingLauncherController">
+                    <modelRef code="imageBottomIndexPage" version="1" />
+                    <config>
+                        <item modelCodeRef="criteria">
+                             <textValue>cat=lmnM-pushing</textValue>
+                        </item>
+                    </config>
+                </component>
+            </container>
+        </component>
+    </container>
+
+    <container modelCode="footerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="footer.1_1" templateRef="common/footer.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="footer" version="1" />
+        </component>
+    </container>
+</pageLayoutComponent>

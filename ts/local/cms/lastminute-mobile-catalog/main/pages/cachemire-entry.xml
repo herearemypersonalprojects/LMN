@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.cachemire-entry.1_1" code="cachemire-entry"
+                     controllerClass="com.travelsoft.lastminute.mobile.catalog.pages.CachemirePageController"
+                     templateRef="cachemire/links.ftl">
+
+    <modelRef code="page.cachemire-entry" version="1" />
+
+</pageLayoutComponent>

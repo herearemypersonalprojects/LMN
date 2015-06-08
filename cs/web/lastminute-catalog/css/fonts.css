@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*!
+ * [fonts Stylesheet]
+ *
+ * @project   LASTMINUTE - RESPONSIVE (DESKSTOP/TABLET/MINI-TABLET)
+ * @version   2.0
+ * @media     all
+ * @use       common style for all pages.
+ * @author    Alexandre PLOUZENNEC
+ */
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?95971092');
+  src: url('../font/fontello.eot?95971092#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?95971092') format('woff'),
+       url('../font/fontello.ttf?95971092') format('truetype'),
+       url('../font/fontello.svg?95971092#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,9 @@
+/************************************************
+*   Loader
+*************************************************/
+#headerBarZone #starterZone.loading .starter .pto_starter {
+  background-image:url(../img/common/loader_starter.gif);
+  background-position: center, center;
+  background-repeat: no-repeat;
+}
+#headerBarZone #starterZone.loading .starter .pto_starter:after { top: -9999px; }

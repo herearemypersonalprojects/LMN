@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+  code="home" id="page.home.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.comparator.ComparatorMainController"
+  templateRef="layout/mainLayout.ftl">
+  <modelRef code="page.compare" version="1"/>
+  <config>
+    <item modelCodeRef="services.comparator.searchCriteriaById">
+      <publishedProductSearchCriteria ttcMode="true"
+        firstResultIndex="0" lastResultIndex="1"
+        resultWithFormulae="true" resultWithDocuments="false" resultWithAvails="true"/>
+    </item>
+  </config>
+
+  <container modelCode="headContainer">
+    <component xsi:type="ContentLayoutComponent"
+    id="head.1_1"
+    controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+    templateRef="head/head.ftl">
+      <modelRef code="head" version="1"/>
+      <container modelCode="tagManJsContainer">
+        <component xsi:type="ContentLayoutComponent"
+        id="head.tagMan.1_1"
+        controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+        templateRef="tracking/tagManJs.ftl">
+          <modelRef code="head.tagman" version="1"/>
+        </component>
+      </container>
+      <container modelCode="metaContainer">
+        <component xsi:type="ContentLayoutComponent"
+          id="head.meta.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="head/meta.ftl">
+          <modelRef code="head.meta" version="1"/>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="tagManTopBody">
+    <component xsi:type="ContentLayoutComponent"
+      id="tagManTopBody.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/tagManTopBody.ftl">
+      <modelRef code="tagManTopBody" version="1"/>
+    </component>
+  </container>
+  <container modelCode="headerContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="header.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="header/header.ftl">
+      <modelRef code="header" version="1"/>
+    </component>
+  </container>
+
+  <container modelCode="mainContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="mainCompare.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+        templateRef="comparator/mainCompare.ftl">
+      <modelRef code="mainCompare" version="1"/>
+
+      <container modelCode="navigationContainer">
+        <component xsi:type="ContentLayoutComponent"
+          id="navigation.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="navigation/navigation.ftl">
+          <modelRef code="navigation" version="1"/>
+          <container modelCode="breadcrumbsContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="navigation.breadcrumbs.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="navigation/breadcrumbs.ftl">
+              <modelRef code="navigation.breadcrumbs" version="1"/>
+            </component>
+          </container>
+          <container modelCode="statusbarContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="navigation.statusbar.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="navigation/statusbar.ftl">
+              <modelRef code="navigation.statusbar" version="1"/>
+            </component>
+          </container>
+          <container modelCode="previousPageContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="navigation.previousPage.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="navigation/previousPage.ftl">
+              <modelRef code="navigation.previousPage" version="1"/>
+            </component>
+          </container>
+        </component>
+      </container>
+
+      <container modelCode="mainContentCompareContainer">
+        <component xsi:type="ContentLayoutComponent"
+          id="mainContentCompare.1_1"
+          controllerClass="com.travelsoft.lastminute.catalog.comparator.ComparatorListContructor"
+          templateRef="comparator/mainContentCompare.ftl">
+          <modelRef code="mainConentCompare" version="1"/>
+          <container modelCode="deleteCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.delete.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/delete.ftl">
+              <modelRef code="compare.delete" version="1"/>
+            </component>
+          </container>
+          <container modelCode="destinationCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.destination.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/destination.ftl">
+              <modelRef code="compare.destination" version="1"/>
+            </component>
+          </container>
+          <container modelCode="typeCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.type.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/type.ftl">
+              <modelRef code="compare.type" version="1"/>
+            </component>
+          </container>
+          <container modelCode="mainPictureCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.mainPicture.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/mainPicture.ftl">
+              <modelRef code="compare.mainPicture" version="1"/>
+            </component>
+          </container>
+          <container modelCode="hotelCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.hotel.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/hotel.ftl">
+              <modelRef code="compare.hotel" version="1"/>
+            </component>
+          </container>
+          <container modelCode="prixCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.prix.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/prix.ftl">
+              <modelRef code="compare.prix" version="1"/>
+            </component>
+          </container>
+
+          <container modelCode="refCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.ref.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/ref.ftl">
+              <modelRef code="compare.ref" version="1"/>
+            </component>
+          </container>
+          <container modelCode="dateDepCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.dateDep.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/dateDep.ftl">
+              <modelRef code="compare.dateDep" version="1"/>
+            </component>
+          </container>
+          <container modelCode="cityArriveCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.villeArrive.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/cityArrive.ftl">
+              <modelRef code="compare.cityArrive" version="1"/>
+            </component>
+          </container>
+          <container modelCode="durationCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.duration.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/duration.ftl">
+              <modelRef code="compare.duration" version="1"/>
+            </component>
+          </container>
+          <container modelCode="prestationsCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.prestations.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/prestations.ftl">
+              <modelRef code="compare.prestations" version="1"/>
+            </component>
+          </container>
+
+          <container modelCode="btnContinueCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.btnContinue.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/btnContinue.ftl">
+              <modelRef code="compare.btnContinue" version="1"/>
+            </component>
+          </container>
+
+          <container modelCode="btnBottomCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.btnBottom.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/btnBottom.ftl">
+              <modelRef code="compare.btnBottom" version="1"/>
+            </component>
+          </container>
+
+          <container modelCode="disponibilityCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.disponibility.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/disponibility.ftl">
+              <modelRef code="compare.disponibility" version="1"/>
+            </component>
+          </container>
+          <container modelCode="opinionCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.opinion.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/opinion.ftl">
+              <modelRef code="compare.opinion" version="1"/>
+            </component>
+          </container>
+          <container modelCode="descriptionCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.description.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/description.ftl">
+              <modelRef code="compare.description" version="1"/>
+            </component>
+          </container>
+          <container modelCode="includeCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.include.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/include.ftl">
+              <modelRef code="compare.include" version="1"/>
+            </component>
+          </container>
+          <container modelCode="continueCompareContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.continue.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="comparator/continue.ftl">
+              <modelRef code="compare.continue" version="1"/>
+            </component>
+          </container>
+          <container modelCode="critereMainContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.main.critere.1_1"
+              controllerClass="com.travelsoft.lastminute.catalog.comparator.CompareCritereController"
+              templateRef="chain.ftl">
+              <modelRef code="compare.continue" version="1"/>
+              <container modelCode="critereContainer">
+                <component xsi:type="ContentLayoutComponent"
+                  id="compare.critere.1_1"
+                  controllerClass="com.travelsoft.lastminute.catalog.comparator.ComparatorSelectListConstructor"
+                  templateRef="comparator/critere.ftl">
+                  <modelRef code="compare.critere" version="1"/>
+                  <container modelCode="critereSelectContainer">
+                    <component xsi:type="ContentLayoutComponent"
+                      id="compare.critere.selece.1_1"
+                      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+                      templateRef="comparator/select.ftl">
+                      <modelRef code="compare.critere.selece" version="1"/>
+                    </component>
+                  </container>
+                </component>
+              </container>
+            </component>
+          </container>
+        </component>
+      </container>
+      <container modelCode="rightBarCompareContainer">
+        <component xsi:type="ContentLayoutComponent"
+          id="rightBarCompare.1_1"
+          controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+          templateRef="comparator/rightBarCompare.ftl">
+          <modelRef code="rightBarCompare" version="1"/>
+          <container modelCode="comparePubContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="compare.pub.1_1"
+              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+              templateRef="banner/banner.ftl">
+              <modelRef code="compare.pub" version="1"/>
+            </component>
+          </container>
+          <container modelCode="mediaTagContainer">
+            <component xsi:type="ContentLayoutComponent"
+              id="mediaTag.1_1"
+              controllerClass="com.travelsoft.lastminute.catalog.tracking.CompareMediaTagStatsBuilder"
+              templateRef="tracking/mediaTag.ftl">
+              <modelRef code="mediaTag" version="1"/>
+            </component>
+          </container>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="footerContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="footer.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="footer/footer.ftl">
+      <modelRef code="footer" version="1"/>
+    </component>
+  </container>
+  <container modelCode="javascriptContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="javascript.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="javascript/js.ftl">
+      <modelRef code="javascript" version="1"/>
+    </component>
+  </container>
+  <container modelCode="trackingContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="tracking.1_1"
+      controllerClass="com.travelsoft.lastminute.catalog.tracking.CompareOmnitureStatsBuilder"
+      templateRef="tracking/tracking.ftl">
+      <modelRef code="tracking" version="1"/>
+    </component>
+  </container>
+  <container modelCode="mediaTagHeader">
+    <component xsi:type="ContentLayoutComponent"
+      id="mediatagHeader.1_1"
+      controllerClass="com.travelsoft.lastminute.catalog.tracking.CompareMediaTagStatsBuilder"
+      templateRef="tracking/mediaTagHeader.ftl">
+      <modelRef code="mediatagHeader" version="1"/>
+    </component>
+  </container>
+  <container modelCode="tagManBottomBody">
+    <component xsi:type="ContentLayoutComponent"
+      id="tagManBottomBody.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/tagManBottomBody.ftl">
+      <modelRef code="tagManBottomBody" version="1"/>
+    </component>
+  </container>
+  <container modelCode="googleAnalyticsContainer">
+    <component xsi:type="ContentLayoutComponent"
+      id="googleAnalyticsContainer.1_1"
+      controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController"
+      templateRef="tracking/googleAnalytics.ftl">
+      <modelRef code="googleAnalyticsContainer" version="1"/>
+    </component>
+  </container>
+
+</pageLayoutComponent>

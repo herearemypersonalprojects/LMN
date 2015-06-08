@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd " code="serp" id="page.serp.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.SearchProductsNG" templateRef="layout/mainLayout.ftl">
+  <modelRef code="page.serp" version="1"/>
+  <config>
+    <item modelCodeRef="services.product.defaultSearchCriteria">
+      <publishedProductSearchCriteria ttcMode="true" firstResultIndex="0" lastResultIndex="20" sortBy="base_price_coeff" responseFormat="OnlyHeaders">
+        <customCriteria code="EXLAS">
+          <value code="!OUI"/>
+        </customCriteria>
+      </publishedProductSearchCriteria>
+    </item>
+    <item>
+      <contextObject label="specific.product.userCode" code="B2C"/>
+    </item>
+    <item>
+      <contextObject label="maxSelectionProducts" code="5"/>
+    </item>
+    <item>
+      <contextObject label="alternatifQueryString" code="s_aj=2"/>
+    </item>
+  </config>
+  <container modelCode="headContainer">
+    <component xsi:type="ContentLayoutComponent" id="serp.head.1_1" controllerClass="com.travelsoft.lastminute.catalog.transContents.BackgroundRetreiver" templateRef="head/head.ftl">
+      <modelRef code="serp.head" version="1"/>
+      <container modelCode="tagManJsContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.tagMan.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="tracking/tagManJs.ftl">
+          <modelRef code="head.tagman" version="1"/>
+        </component>
+      </container>
+      <container modelCode="metaContainer">
+        <component xsi:type="ContentLayoutComponent" id="head.meta.1_1" controllerClass="com.travelsoft.lastminute.catalog.seo.SeoProductDataRetriever" templateRef="head/meta.ftl">
+          <modelRef code="head.meta" version="1"/>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="tagManTopBody">
+    <component xsi:type="ContentLayoutComponent" id="tagManTopBody.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="tracking/tagManTopBody.ftl">
+      <modelRef code="tagManTopBody" version="1"/>
+    </component>
+  </container>
+  <container modelCode="headerContainer">
+    <component xsi:type="ContentLayoutComponent" id="header.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="header/header.ftl">
+      <modelRef code="header" version="1"/>
+    </component>
+  </container>
+  <container modelCode="navigationContainer">
+    <component xsi:type="ContentLayoutComponent" id="navigation.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="navigation/navigation.ftl">
+      <modelRef code="navigation" version="1"/>
+      <container modelCode="breadcrumbsContainer">
+        <component xsi:type="ContentLayoutComponent" id="navigation.breadcrumbs.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="navigation/breadcrumbs.ftl">
+          <modelRef code="navigation.breadcrumbs" version="1"/>
+        </component>
+      </container>
+      <container modelCode="statusbarContainer">
+        <component xsi:type="ContentLayoutComponent" id="navigation.statusbar.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="navigation/statusbar.ftl">
+          <modelRef code="navigation.statusbar" version="1"/>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="mainContainer">
+    <component xsi:type="ContentLayoutComponent" id="main.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="layout/centerContentLayout.ftl">
+      <modelRef code="main" version="1"/>
+      <container modelCode="mainContentContainer">
+        <component xsi:type="ContentLayoutComponent" id="main.dispacher.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.ResultsDispatcher" templateRef="serp/mainContent.ftl">
+          <modelRef code="main.dispacher" version="1"/>
+          <container modelCode="withResultsContainer">
+            <component xsi:type="ContentLayoutComponent" id="main.withResults.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/results.ftl">
+              <modelRef code="main.withResults" version="1"/>
+              <container modelCode="infoTopContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withResults.info.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/infoTop.ftl">
+                  <modelRef code="main.withResults.info" version="1"/>
+                  <container modelCode="destinationDescContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.info.destinationDesc.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.SearchAndFillDestinationInfo" templateRef="serp/destinationDesc.ftl">
+                      <modelRef code="main.withResults.info.destinationDesc" version="1"/>
+                    </component>
+                  </container>
+                </component>
+              </container>
+              <container modelCode="listContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withResults.list.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/list/list.ftl">
+                  <modelRef code="main.withResults.list" version="1"/>
+                  <container modelCode="expertListContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.expertList.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetProductsList" templateRef="serp/list/expertList.ftl">
+                      <modelRef code="main.withResults.expertList" version="1"/>
+                      <container modelCode="cartoucheContainer">
+                        <component xsi:type="ContentLayoutComponent" id="main.withResults.cartouche.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem" templateRef="product/cartouche.ftl">
+                          <modelRef code="main.withResults.cartouche" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                  <container modelCode="paginationsContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.info.pagination.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetPartitioners" templateRef="pagination/pagination.ftl">
+                      <modelRef code="main.withResults.info.pagination" version="1"/>
+                      <container modelCode="paginationContainer">
+                        <component xsi:type="ContentLayoutComponent" id="pagination.partition.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillPartitionerItem" templateRef="pagination/paginationItem.ftl">
+                          <modelRef code="pagination.partition" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                  <container modelCode="allListContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.expertList.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetProductsList" templateRef="serp/list/allList.ftl">
+                      <modelRef code="main.withResults.AllList" version="1"/>
+                      <container modelCode="cartoucheContainer">
+                        <component xsi:type="ContentLayoutComponent" id="main.withResults.cartouche.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem" templateRef="product/cartouche.ftl">
+                          <modelRef code="main.withResults.cartouche" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                </component>
+              </container>
+              <container modelCode="infoBottomContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withoutResults.infoBottomContainer.1_1" controllerClass="com.travelsoft.lastminute.catalog.seo.SeoLinksRetriever" templateRef="serp/infoBottom.ftl">
+                  <modelRef code="main.withResults.infoBottom" version="1"/>
+                </component>
+              </container>
+            </component>
+          </container>
+          <container modelCode="withoutResultsContainer">
+            <component xsi:type="ContentLayoutComponent" id="main.withoutResults.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/results.ftl">
+              <modelRef code="main.withoutResults" version="1"/>
+              <container modelCode="infoTopContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withResults.info.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/noResultsInfoTop.ftl">
+                  <modelRef code="main.withResults.info" version="1"/>
+                </component>
+              </container>
+              <container modelCode="listContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withResults.list.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="serp/list/list.ftl">
+                  <modelRef code="main.withResults.list" version="1"/>
+                  <container modelCode="expertListContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.expertList.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetProductsList" templateRef="serp/list/expertList.ftl">
+                      <modelRef code="main.withResults.expertList" version="1"/>
+                      <container modelCode="cartoucheContainer">
+                        <component xsi:type="ContentLayoutComponent" id="main.withResults.cartouche.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem" templateRef="product/cartouche.ftl">
+                          <modelRef code="main.withResults.cartouche" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                  <container modelCode="paginationsContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.info.pagination.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetPartitioners" templateRef="pagination/pagination.ftl">
+                      <modelRef code="main.withResults.info.pagination" version="1"/>
+                      <container modelCode="paginationContainer">
+                        <component xsi:type="ContentLayoutComponent" id="pagination.partition.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillPartitionerItem" templateRef="pagination/paginationItem.ftl">
+                          <modelRef code="pagination.partition" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                  <container modelCode="allListContainer">
+                    <component xsi:type="ContentLayoutComponent" id="main.withResults.expertList.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetProductsList" templateRef="serp/list/allList.ftl">
+                      <modelRef code="main.withResults.AllList" version="1"/>
+                      <container modelCode="cartoucheContainer">
+                        <component xsi:type="ContentLayoutComponent" id="main.withResults.cartouche.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem" templateRef="product/cartouche.ftl">
+                          <modelRef code="main.withResults.cartouche" version="1"/>
+                        </component>
+                      </container>
+                    </component>
+                  </container>
+                </component>
+              </container>
+              <container modelCode="infoBottomContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.withoutResults.infoBottomContainer.1_1" controllerClass="com.travelsoft.lastminute.catalog.content.SearchDynamicPackageContent" templateRef="serp/noResultsInfoBottom.ftl">
+                  <modelRef code="main.withResults.infoBottom" version="1"/>
+                </component>
+              </container>
+            </component>
+          </container>
+        </component>
+      </container>
+      <container modelCode="sideBarContainer">
+        <component xsi:type="ContentLayoutComponent" id="main.sideBar.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="layout/sideBarLayout.ftl">
+          <modelRef code="main.sideBar" version="1"/>
+          <container modelCode="searchEngineWrapper">
+            <component xsi:type="ContentLayoutComponent" id="main.engineWrapper.1_1" controllerClass="com.travelsoft.lastminute.catalog.searchengine.SearchEngineBuilder" templateRef="searchEngine/engineLayout.ftl">
+              <modelRef code="main.sideBar" version="1"/>
+              <config>
+                <item modelCodeRef="searchEngineCriteria">
+                  <publishedProductSearchCriteria ttcMode="true">
+                    <searchEngineField>dpci</searchEngineField>
+                    <searchEngineField>cc.de</searchEngineField>
+                  </publishedProductSearchCriteria>
+                </item>
+              </config>
+              <container modelCode="searchEngineContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.sideBar.searchEngine.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="searchEngine/searchEngine.ftl">
+                  <modelRef code="main.sideBar.searchEngine" version="1"/>
+                </component>
+              </container>
+              <container modelCode="refinementSearchEngineContainer">
+                <component xsi:type="ContentLayoutComponent" id="main.sideBar.refinementSearchEngine.1_1" controllerClass="com.travelsoft.lastminute.catalog.searchengine.RefinementSearchEngineBuilder" templateRef="searchEngine/refinementSearchEngine.ftl">
+                  <modelRef code="main.sideBar.advancedSearch" version="1"/>
+                  <config>
+                    <item modelCodeRef="refinementSearchEngineCriteria">
+                      <publishedProductSearchCriteria ttcMode="true">
+                        <searchEngineField>cc.de</searchEngineField>
+                        <searchEngineField>meal</searchEngineField>
+                        <searchEngineField>cc.cat</searchEngineField>
+                        <searchEngineField>cc.th</searchEngineField>
+                        <searchEngineField>cc.tvoyages</searchEngineField>
+                        <searchEngineField>mxp</searchEngineField>
+                      </publishedProductSearchCriteria>
+                    </item>
+                  </config>
+                </component>
+              </container>
+            </component>
+          </container>
+          <container modelCode="pubContainer">
+            <component xsi:type="ContentLayoutComponent" id="main.sideBar.pub.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="banner/banner.ftl">
+              <modelRef code="main.sideBar.pub" version="1"/>
+            </component>
+          </container>
+          <container modelCode="mediaTagContainer">
+            <component xsi:type="ContentLayoutComponent" id="mediaTag.1_1" controllerClass="com.travelsoft.lastminute.catalog.tracking.SerpMediaTagStatsBuilder" templateRef="tracking/mediaTag.ftl">
+              <modelRef code="mediaTag" version="1"/>
+            </component>
+          </container>
+        </component>
+      </container>
+    </component>
+  </container>
+  <container modelCode="footerContainer">
+    <component xsi:type="ContentLayoutComponent" id="footer.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="footer/footer.ftl">
+      <modelRef code="footer" version="1"/>
+    </component>
+  </container>
+  <container modelCode="javascriptContainer">
+    <component xsi:type="ContentLayoutComponent" id="javascript.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="javascript/js.ftl">
+      <modelRef code="javascript" version="1"/>
+    </component>
+  </container>
+  <container modelCode="trackingContainer">
+    <component xsi:type="ContentLayoutComponent" id="tracking.1_1" controllerClass="com.travelsoft.lastminute.catalog.tracking.SerpOmnitureStatsBuilder" templateRef="tracking/tracking.ftl">
+      <modelRef code="tracking" version="1"/>
+    </component>
+  </container>
+  <container modelCode="mediaTagHeader">
+    <component xsi:type="ContentLayoutComponent" id="mediatagHeader.1_1" controllerClass="com.travelsoft.lastminute.catalog.tracking.SerpMediaTagStatsBuilder" templateRef="tracking/mediaTagHeader.ftl">
+      <modelRef code="mediatagHeader" version="1"/>
+    </component>
+  </container>
+  <container modelCode="tagManBottomBody">
+    <component xsi:type="ContentLayoutComponent" id="tagManBottomBody.1_1" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="tracking/tagManBottomBody.ftl">
+      <modelRef code="tagManBottomBody" version="1"/>
+    </component>
+  </container>
+</pageLayoutComponent>

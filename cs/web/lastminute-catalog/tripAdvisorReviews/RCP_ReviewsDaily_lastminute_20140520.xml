@@ -1,0 +1,514 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!-- Generated on 2014-05-20 02:37:08 -->
+
+<PlaceList>
+  <Place id="191798" type="hotel" rating="4.5">
+    <Name>Best Western Dean Court Hotel</Name>
+	<PartnerId>246811</PartnerId>
+    <PartnerId>246810</PartnerId>
+    <Reviews>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+    </Reviews>
+  </Place>
+  <Place id="191798" type="hotel" rating="4.5">
+    <Name>Best Western Dean Court Hotel</Name>
+    <PartnerId>1787</PartnerId>
+    <Reviews>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>des bonnes journées</Title>
+        <Text>Chambre très spacieuse, avec terrasse, frigo, climatisation, tv. Salle de bain un peu exiguë, avec douche mais pas de baignoire. Chambre bien entretenue et propre. Piscine agréable avec petit bémol, une profondeur d'1m90 dans le bassin principal, sans zone où nous pouvons avoir pied. Restaurant très bon, réservé aux amateurs de nourritures italiennes, pâtes et risotto tous les soirs. Point agréable, eau et vin en libre service aux repas. Personnel disponible, mais ne parle pas français (excepté un des réceptionnistes) et pas toujours anglais. Le wifi n'est pas disponible dans les chambres et ne fonctionnait pas dans le hall de l’hôtel lors de notre séjour. A savoir l’hôtel est un peu perdu dans la campagne, voiture obligatoire pour se balader, mais parfait pour les îles éoliennes, cefalu,... La plage est très agréable, avec transat pour tous les résidents, plage de sable, avec quelques cailloux dans la mer. Belle vue sur les îles éoliennes. Clientèle majoritairement italienne, assez âgée et donc très expressive. Animations peuz tournées vers l'international.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>false</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>false</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>false</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>
+      <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>	  
+     <Review id="94242275">
+        <ModerationStatus>Published</ModerationStatus>
+        <DateSubmitted>2011-01-24T08:14:45.000-06:00</DateSubmitted>
+        <DateModified>2011-01-25T11:10:32.000-06:00</DateModified>
+        <DatePublished>2011-01-25T11:10:32.000-06:00</DatePublished>
+        <Rating>5</Rating>
+        <Language>en</Language>
+        <Crawlable>true</Crawlable>
+        <Title>Beautiful small hotel with modern luxuries</Title>
+        <Text>What a gem of a place! Check in was speedy, efficient and friendly.</Text>
+        <Author>
+          <AuthorName>April C</AuthorName>
+          <Location>London, UK</Location>
+          <EmailAddress>ll@somewhere.com</EmailAddress>
+          <IpAddress>111.222.333.444</IpAddress>
+        </Author>
+        <ReviewSubRatings>
+          <ReviewSubRating name="Value"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Rooms"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Location"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Cleanliness"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="Service"><Value>5</Value></ReviewSubRating>
+          <ReviewSubRating name="SleepQuality"><Value>5</Value></ReviewSubRating>
+        </ReviewSubRatings>
+        <ReviewDetails>
+          <ReviewDetail name="DateOfVisit"><Value>201101</Value></ReviewDetail>
+          <ReviewDetail name="PurposeOfTrip"><Value>Business</Value></ReviewDetail>
+          <ReviewDetail name="TraveledWith"><Value>With Colleagues</Value></ReviewDetail>
+          <ReviewDetail name="Recommend"><Value>yes</Value></ReviewDetail>
+        </ReviewDetails>
+        <AdditionalFields>
+          <AdditionalField id="ItinId"><Value>54600913</Value></AdditionalField>
+          <AdditionalField id="BrandID"><Value>9</Value></AdditionalField>
+          <AdditionalField id="ProductID"><Value>463132</Value></AdditionalField>
+          <AdditionalField id="Origin"><Value>site</Value></AdditionalField>
+        </AdditionalFields>
+        <CustomQuestions>
+          <CustomQuestion id="1" name="NetPromoterScore">
+            <Value>8</Value>
+          </CustomQuestion>
+          <CustomQuestion id="2" name="NetPromoterExperienceDescription">
+            <Value>I used the telephone consultant to book my room this go round and he was very helpful and handled everything.</Value>
+          </CustomQuestion>
+        </CustomQuestions>
+        <ManagementResponse id="88088800">
+          <ModerationStatus>Published</ModerationStatus>
+          <DatePublished>2011-01-27T11:10:32.000-06:00</DatePublished>
+          <Language>en</Language>
+          <Text>I am glad you enjoyed your stay in our hotel.</Text>
+          <Author>
+            <AuthorName>GhiJkl</AuthorName>
+            <Location>York, UK</Location>
+          </Author>
+        </ManagementResponse>
+      </Review>	  
+    </Reviews>
+
+	</Place>
+  </PlaceList>

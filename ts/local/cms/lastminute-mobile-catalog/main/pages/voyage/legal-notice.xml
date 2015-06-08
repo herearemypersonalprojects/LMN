@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.legalNotice.1_1" code="legalNotice"
+                     controllerClass="com.travelsoft.lastminute.mobile.catalog.pages.DefaultPageController"
+                     templateRef="common/mainLayout.ftl">
+
+    <modelRef code="page.legalNotice" version="1" />
+
+    <container modelCode="headContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="head.1_1" templateRef="common/head.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="head" version="1" />
+        </component>
+    </container>
+
+    <container modelCode="headerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="header.1_1" templateRef="common/header.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="header" version="1" />
+        </component>
+    </container>
+
+    <container modelCode="bodyContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="body.1_1" templateRef="legal-notice/legalNoticeBody.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="body" version="1" />
+        </component>
+    </container>
+
+    <container modelCode="footerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="footer.1_1" templateRef="common/footer.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="footer" version="1" />
+        </component>
+    </container>
+</pageLayoutComponent>

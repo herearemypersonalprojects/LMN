@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*!
+ * [ie8 Stylesheet]
+ *
+ * @project   LASTMINUTE - RESPONSIVE (DESKSTOP/TABLET/MINI-TABLET)
+ * @version   2.0
+ * @media     all
+ * @use       Internet explorer 8 style for all pages.
+ * @author    Alexandre PLOUZENNEC
+ */
+
+/** ---------------------------------------------
+ * COMMON
+ */
+
+  /* FIX RETIA */
+  .link-send:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -120px -116px; }
+  .alert-price span { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -94px 0; }
+  .help-phone span { background: url(../css_imgs/ie/mtx_elements.png) no-repeat 0 0; }
+  .block-btn.less:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -56px -78px; }
+  .block-btn.plus:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -82px -76px; }
+  .block-btn.disabled.less:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -56px -88px; }
+  .block-btn.disabled.plus:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -114px -76px; }
+  .search-filters .inner-block .selectBlock.dayDeparture .picto-calendar { background: url(../css_imgs/ie/mtx_elements.png) no-repeat 0 -104px; }
+  .sort-selector .btn-compare strong span { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -56px -46px; }
+  .blk-reduction-cgos .btn-reduction-cgos a:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -66px -116px; }
+  .book-stay .contain-book .offers span { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -54px 0; }
+  .block-infos .img-bestClub { background: url(../css_imgs/ie/mtx_elements.png) no-repeat right 0; }
+  .block-customer-reviews .positives:before { background: url(../css_imgs/ie/mtx_elements.png) no-repeat 0 -162px; }
+  .block-customer-reviews p.lastChild:after { background: url(../css_imgs/ie/mtx_elements.png) no-repeat -40px -162px; }
+  .comparison .optionsTab span { background: url(../css_imgs/ie/mtx_elements.png) -252px 0 no-repeat; }

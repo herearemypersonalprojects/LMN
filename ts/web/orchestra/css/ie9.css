@@ -1,0 +1,14 @@
+/************************************************
+*   Header
+*************************************************/
+#headerBarZone { filter:none; }
+
+/************************************************
+*   Loader
+*************************************************/
+#headerBarZone #starterZone.loading .starter .pto_starter {
+  background-image:url(../img/common/loader_starter.gif) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#headerBarZone #starterZone.loading .starter .pto_starter:after { display: none; }

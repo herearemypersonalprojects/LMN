@@ -1,0 +1,79 @@
+BODY
+  {
+      FONT-SIZE: 12px;
+      FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+  }
+TD
+  {
+      FONT-SIZE: 12px;
+      FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+  }
+H1
+  {
+      FONT-SIZE: 20px;
+      FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+  }
+H2
+  {
+      FONT-SIZE: 15px;
+      FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+  }
+H3
+  {
+      FONT-SIZE: 13px;
+      FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+  }
+
+img {
+  border: none;
+}
+
+.tableBorder
+  {
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: #000000 1px solid
+  }
+
+.tdBorder
+  {
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: 0px
+  }
+
+.center{
+    text-align:center;
+}
+
+.tdTitle
+{
+  background-color:#EEEEEE;
+}
+
+.tdTitleExpired
+{
+  background-color:#fff3f1;
+}
+
+.tdTitleFuture
+{
+  background-color:#f1faff;
+}
+
+.error
+{
+  color:red;
+}
+
+.info
+{
+  color:green;
+}
+
+.bold
+{
+    font-weight:bold;
+}

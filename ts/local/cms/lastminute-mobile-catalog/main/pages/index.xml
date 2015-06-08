@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+                     id="page.index.1_1" code="index"
+                     controllerClass="com.travelsoft.lastminute.mobile.catalog.pages.HomePageController"
+                     templateRef="common/mainLayout.ftl">
+
+    <modelRef code="page.index" version="1" />
+
+    <config>
+      <item modelCodeRef="searchEngineCriteria">
+        <publishedProductSearchCriteria>
+          <searchEngineField>dpci</searchEngineField>
+          <searchEngineField>cc.de</searchEngineField>
+        </publishedProductSearchCriteria>
+      </item>
+    </config>
+
+    <container modelCode="headContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="head.1_1" templateRef="common/head.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="head" version="1" />
+
+            <!-- container modelCode="specificCSSContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="specificCSS.1_1" templateRef="sales/salesSpecificCSS.ftl"
+                           controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                    <modelRef code="specificCSS" version="1" />
+                </component>
+            </container>
+
+            <container modelCode="specificJSContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="specificJS.1_1" templateRef="sales/salesSpecificJS.ftl"
+                           controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                    <modelRef code="specificJS" version="1" />
+                </component>
+            </container-->
+        </component>
+    </container>
+
+    <container modelCode="headerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="header.1_1" templateRef="index/indexHeader.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="header" version="1" />
+
+            <container modelCode="lmnSearchLauncherContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="lmnSearchLauncher.1_1" templateRef="index/lmnSearchLauncher.ftl"
+                           controllerClass="com.travelsoft.lastminute.mobile.catalog.controller.transcontent.LmnSearchLaunchersController">
+                    <modelRef code="imageIndexPage" version="1" />
+                    <config>
+                        <item modelCodeRef="criteria">
+                             <textValue>cat=lmnM-LMLaunchers</textValue>
+                        </item>
+                    </config>
+                </component>
+            </container>
+
+            <!-- container modelCode="menuContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="menu.1_1" templateRef="common/menu.ftl"
+                           controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                    <modelRef code="menu" version="1" />
+                </component>
+            </container-->
+        </component>
+    </container>
+
+    <container modelCode="bodyContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="body.1_1" templateRef="common/searchForm.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="body" version="1" />
+
+            <!-- container modelCode="activeSalesContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="activeSales.1_1" templateRef="sales/activeSales.ftl"
+                           controllerClass="com.travelsoft.degriftour.catalog.controller.sales.ActiveSalesController">
+                    <modelRef code="activeSales" version="1" />
+
+                    <container modelCode="saleContainer">
+                        <component xsi:type="ContentLayoutComponent"
+                                   id="sale.1_1" templateRef="sales/sale.ftl"
+                                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                            <modelRef code="sale" version="1" />
+                        </component>
+                    </container>
+                </component>
+            </container>
+
+            <container modelCode="upcomingSalesContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="upcomingSales.1_1" templateRef="sales/upcomingSales.ftl"
+                           controllerClass="com.travelsoft.degriftour.catalog.controller.sales.UpcomingSalesController">
+                    <modelRef code="upcomingSales" version="1" />
+
+                    <container modelCode="saleContainer">
+                        <component xsi:type="ContentLayoutComponent"
+                                   id="sale.1_1" templateRef="sales/sale.ftl"
+                                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                            <modelRef code="sale" version="1" />
+                        </component>
+                    </container>
+                </component>
+            </container-->
+        </component>
+    </container>
+
+    <!-- container modelCode="popinsContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="popins.1_1" templateRef="index/indexPopins.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="popins" version="1" />
+
+            <container modelCode="lmnSearchFormPopinContainer">
+                <component xsi:type="ContentLayoutComponent"
+                              id="shareProductPopin.1_1" templateRef="common/lmnSearchFormPopin.ftl"
+                              controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+                    <modelRef code="shareProductPopin" version="1" />
+                </component>
+            </container>
+        </component>
+    </container-->
+
+    <!-- container modelCode="footerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="footer.1_1" templateRef="common/footer.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="footer" version="1" />
+
+            <container modelCode="linksContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="links.1_1" templateRef="common/footer-links.ftl"
+                           controllerClass="com.travelsoft.degriftour.catalog.controller.transcontent.LinksController">
+                    <modelRef code="links" version="1" />
+                    <config>
+                        <item modelCodeRef="criteria">
+                             <textValue>cat=dgft-footerLinks</textValue>
+                        </item>
+                    </config>
+                </component>
+            </container>
+
+            <container modelCode="sponsorshipContainer">
+                <component xsi:type="ContentLayoutComponent"
+                           id="sponsorship.1_1" templateRef="common/footer-sponsorship.ftl"
+                           controllerClass="com.travelsoft.degriftour.catalog.controller.transcontent.SponsorshipController">
+                    <modelRef code="sponsorship" version="1" />
+                    <config>
+                        <item modelCodeRef="criteria">
+                             <textValue>cat=dgft-footerSponsorsh</textValue>
+                        </item>
+                    </config>
+                </component>
+            </container>
+        </component>
+    </container>
+
+    <container modelCode="omnitureTrackingContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="omnitureTracking.1_1" templateRef="common/omnitureTracking.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="omnitureTracking" version="1" />
+        </component>
+    </container-->
+
+    <container modelCode="footerContainer">
+        <component xsi:type="ContentLayoutComponent"
+                   id="footer.1_1" templateRef="common/footer.ftl"
+                   controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController">
+            <modelRef code="footer" version="1" />
+        </component>
+    </container>
+</pageLayoutComponent>

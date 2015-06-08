@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd "
+  code="serp" id="page.serp.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.serp.SearchProducts"
+  templateRef="flashSale/main.ftl">
+  <modelRef code="page.serp" version="1" />
+  <config>
+    <item modelCodeRef="services.product.defaultSearchCriteria">
+      <publishedProductSearchCriteria ttcMode="true" firstResultIndex="0" lastResultIndex="10"
+            sortBy="base_price_coeff"
+            resultWithAvails="true"
+            resultWithCriterion="true"
+            resultWithDocuments="true"
+            responseFormat="UserDefine">
+            <customCriteria code="lp">
+                <value code="rank" />
+            </customCriteria>
+      </publishedProductSearchCriteria>
+    </item>
+  </config>
+  <container modelCode="mainContainer">
+    <component xsi:type="ContentLayoutComponent" id="main.withResults.expertList.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.GetLandingPageProductsList"
+            templateRef="landingPage/list.ftl">
+      <modelRef code="main.withResults.AllList" version="1" />
+      <container modelCode="cartoucheContainer">
+        <component xsi:type="ContentLayoutComponent" id="main.withResults.cartouche.1_1" controllerClass="com.travelsoft.lastminute.catalog.serp.FillProductItem"
+            templateRef="landingPage/product.ftl">
+          <modelRef code="main.withResults.cartouche" version="1" />
+          
+
+        </component>
+      </container>
+    </component>
+  </container>
+
+</pageLayoutComponent>

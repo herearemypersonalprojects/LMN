@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.travelsoft.fr ../../../../../cameleo.catalog.data/src/main/resources/layouts.xsd" code="tourcameleo.default.displayer" id="page.tourcameleo.default.displayer.1_1" displayerType="Simple" controllerClass="com.travelsoft.cameleo.cms.processor.controller.ChainController" templateRef="tourcameleo.default.displayer/displayer.ftl">
+  <modelRef code="page.tourcameleo.default.displayer" version="1" />
+</pageLayoutComponent>

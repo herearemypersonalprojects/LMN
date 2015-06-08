@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageLayoutComponent xmlns="http://www.travelsoft.fr"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.travelsoft.fr ../../../../../../../TRUNK_cameleo.catalog.data/src/main/resources/layouts.xsd"
+  code="home" id="page.customerReview.1_1"
+  controllerClass="com.travelsoft.lastminute.catalog.product.CustomerReviewController"
+  templateRef="chain.ftl">
+  <modelRef code="page.customerReview" version="1"/>
+  <config>
+    <item modelCodeRef="services.product.searchCustomerReview">
+      <publishedProductSearchCriteria nbDisplayedAvis="3"/>
+    </item>
+  </config>
+</pageLayoutComponent>

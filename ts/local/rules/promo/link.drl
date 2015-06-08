@@ -1,0 +1,45 @@
+package Some_business_rules;
+
+//generated from freemarker
+import java.util.Date;
+import com.travelsoft.cameleo.catalog.data.Product;
+import com.travelsoft.cameleo.catalog.data.RuleProduct;
+import com.travelsoft.rulesManager.RulesUtil;
+
+  //STACKABLE rules
+
+  //End of stackable rules
+  //UNSTACKABLE rules begin here
+      rule "0"
+        salience 90
+        when
+          RuleProduct($p : product, $c : context)
+          $product : Product(
+             code == "103721"
+          ) from $p
+        then
+          //Java call to execute the sub drls
+          RulesUtil.callPromoRules($product, $c, "0", false);
+      end
+      rule "1"
+        salience 90
+        when
+          RuleProduct($p : product, $c : context)
+          $product : Product(
+             code == "57321"
+          ) from $p
+        then
+          //Java call to execute the sub drls
+          RulesUtil.callPromoRules($product, $c, "1", false);
+      end
+  //End of unstackable rules
+
+  //Final rule to save a product
+  rule "finish"
+    salience 80
+    when
+      RuleProduct($p : product, $c : context)
+      $product : Product() from $p
+    then
+      RulesUtil.finishProduct($product, $c);
+  end
